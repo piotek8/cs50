@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: goes through and compares one with the other, reversed was the slowest measurement due to the fact that it has to replace the digits every time
+
+sort2 uses: merge sort
+
+How do you know?: is the fastest possible sorting because it divides into smaller parts and combines them by sorting
+
+sort3 uses: selection sort
+
+How do you know?: it has similar results in all measurements because there is no difference in how the numbers are arranged - to sort them, it must go through each of them.
