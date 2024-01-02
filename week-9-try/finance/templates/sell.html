@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "layout.html" %}
 
 {% block title %}Sell{% endblock %}
@@ -19,4 +20,27 @@
         <button class="btn btn-primary" type="submit">Sell</button>
         </div>
     </form>
+=======
+{% extends "layout.html" %}
+
+{% block title %}Sell{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="symbol">
+                <option disabled selected>Symbol</option>
+                {% for row in symbol %}
+                <option>{{ row["symbol"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Shares" type="number" min="1">
+        </div>
+        <div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+        </div>
+    </form>
+>>>>>>> 4ecb3844c2144b401961454300ba2506d47e26fa
 {% endblock %}
